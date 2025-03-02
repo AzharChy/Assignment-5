@@ -28,7 +28,7 @@
                 <div>
                     <i class="fa-solid fa-check text-xl text-center bg-blue-600 text-white w-8 h-8 border rounded-lg"></i> 
                 </div>
-                <div class="font-bold text-3xl oppins-bold">23</div>
+                <div id="nav-num" class="font-bold text-3xl oppins-bold">23</div>
                 <div>
                    <button id="nav-btn" class="relative p-[2px] bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 w-12 h-12 rounded-full">
                     <i class="fa-solid fa-arrows-rotate block px-2 py-2 text-blue-400 ml-1.5 bg-white rounded-full w-8 h-8"></i>
@@ -51,11 +51,12 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="poppins-medium text-base">Task Assigned</h3>
-                            <h3 class="poppins-bold text-3xl">5</h3>
+                            <h3 class="poppins-bold text-3xl"><span id="body-nums">6</span></h3>
                         </div>
                     </div>
         
-                    <div class="flex justify-center items-center border rounded-md flex-[1.5] h-32 bg-blue-700">
+                    <div id="calendar-btn" class="flex justify-center items-center border rounded-md flex-[1.5] h-32 bg-blue-700 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+                        
                         <div>
                             <img class="w-14 h-16 ml-6" src="assets/board.png" alt="">
                         </div>
@@ -94,7 +95,7 @@
                                 <h3 class="poppins-medium text-base">21 March 2025</h3>
                              </div>
                              <div>
-                              <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                              <button id="btn-1" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                              </div>
                           </div>
                         </div>
@@ -116,7 +117,7 @@
                             <h3 class="poppins-medium text-base">21 March 2025</h3>
                          </div>
                          <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                          <button id="btn-2" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                          </div>
                       </div>
                     </div></div>
@@ -137,7 +138,7 @@
                             <h3 class="poppins-medium text-base">21 March 2025</h3>
                          </div>
                          <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                          <button id="btn-3" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                          </div>
                       </div>
                     </div></div>
@@ -161,7 +162,7 @@
                                 <h3 class="poppins-medium text-base">21 March 2025</h3>
                              </div>
                              <div>
-                              <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                              <button id="btn-4" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                              </div>
                           </div>
                         </div>
@@ -184,7 +185,7 @@
                                 <h3 class="poppins-medium text-base">21 March 2025</h3>
                              </div>
                              <div>
-                              <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                              <button id="btn-5" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                              </div>
                           </div>
                         </div>
@@ -207,7 +208,7 @@
                                 <h3 class="poppins-medium text-base">21 March 2025</h3>
                              </div>
                              <div>
-                              <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
+                              <button id="btn-6" class="bg-blue-600 btn m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
                              </div>
                           </div>
                         </div>
@@ -229,6 +230,7 @@
                     <button class="bg-blue-600 mt-6 ml-20 mr-20 flex justify-center items-center text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Clear History</button>
                 </div>
                 <hr class="border-dotted border-t-2 border-gray-400 my-4">
+                 <div><p id="logo-text" class="bg-blue-300 border rounded-md w-60 h-20 text-base poppins-regular"></p></div> 
 
             </div>
         
@@ -236,11 +238,14 @@
         
 
     </div>
-</body>
+
 
       
 
      
     <script src="script/nav-button.js"></script>
+    <script src="script/calendar-btn.js"></script>
+    <script src="script/button.js"></script>
+    <script src="script/activitLogo.js"></script>
 </body>
 </html>
