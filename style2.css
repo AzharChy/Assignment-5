@@ -1,0 +1,12 @@
+body{
+    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(55, 82, 253, 0.2);
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }

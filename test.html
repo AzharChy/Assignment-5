@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,193 +10,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-    <main class="flex justify-between gap-4 mt-8">
-    
-        
-        <div class="flex flex-col gap-4 w-full">
-            
-            
-            <div class="flex gap-4">
-                <div class="flex justify-center items-center border rounded-md flex-1 h-32 bg-blue-200">
-                    <div>
-                        <i class="fa-solid fa-check text-xl text-center bg-blue-600 text-white w-6 h-6 border rounded-lg"></i>
-                    </div>
-                    <div class="ml-4">
-                        <h3 class="poppins-medium text-base">Task Assigned</h3>
-                        <h3 class="poppins-bold text-3xl">5</h3>
-                    </div>
+   
+    <!-- nav starts -->
+   
+    <nav>
+        <div class="navBar flex justify-around mt-6 bg-white">
+            <div class="nav-left flex gap-2 ml-6 mt-4">
+                <div class="">
+                    <img class="w-12 h-12" src="assets/logo.png" alt="">
                 </div>
-    
-                <div class="flex justify-center items-center border rounded-md flex-[1.5] h-32 bg-blue-700">
-                    <div>
-                        <img class="w-14 h-16 ml-6" src="assets/board.png" alt="">
-                    </div>
-                    <div>
-                        <h3 class="poppins-medium text-white ml-4">Discover Something<br>New Today!</h3>
-                    </div>
-                </div>
-    
-                <div class="flex justify-center items-center border rounded-md flex-1 h-32 bg-blue-200">
-                    <div>
-                        <img class="w-16 h-16 ml-4" src="assets/calender.png" alt="">
-                    </div>
-                    <div>
-                        <h5 class="poppins-medium text-base ml-4">Wed ,<br><span>July 28 2025</span></h5>
-                    </div>
+                <div class="w-44 h-14">
+                    <h1 class="nav-title text-3xl">Dev<span class="font-bold oppins-bold">Board</span></h1>
                 </div>
             </div>
-    
-            <!-- 2nd Row (Grid Layout) -->
-            <div class="grid grid-cols-3 gap-4">
-                <div class="w-80 h-[317px] bg-blue-100">
-                    <div>
-                        <div>
-                            <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">ShowEase</h3>
-                        </div>
-                        <div>
-                            <h3 class="poppins-bold ml-4 mt-4">Fix Mobile Button Issue</h3>
-                        </div>
-                        <div class="w-72 h-28">
-                      <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                        </div>
-                        <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                      <div class="flex justify-around">
-                         <div class="ml-4">
-                            <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                            <h3 class="poppins-medium text-base">21 March 2025</h3>
-                         </div>
-                         <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="w-80 h-[317px] bg-blue-200"> <div>
-                    <div>
-                        <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">SwiftPay</h3>
-                    </div>
-                    <div>
-                        <h3 class="poppins-bold ml-4 mt-4">Optimize Home Page</h3>
-                    </div>
-                    <div class="w-72 h-28">
-                  <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                    </div>
-                    <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                  <div class="flex justify-around">
-                     <div class="ml-4">
-                        <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                        <h3 class="poppins-medium text-base">21 March 2025</h3>
-                     </div>
-                     <div>
-                      <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                     </div>
-                  </div>
-                </div></div>
-                <div class="w-80 h-[317px] bg-blue-200"> <div>
-                    <div>
-                        <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">CloudSync</h3>
-                    </div>
-                    <div>
-                        <h3 class="poppins-bold ml-4 mt-4">Add Dark Mode</h3>
-                    </div>
-                    <div class="w-72 h-28">
-                  <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 ml-4 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                    </div>
-                    <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                  <div class="flex justify-around">
-                     <div class="ml-4">
-                        <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                        <h3 class="poppins-medium text-base">21 March 2025</h3>
-                     </div>
-                     <div>
-                      <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                     </div>
-                  </div>
-                </div></div>
-            </div>
-            <div class="grid grid-cols-3 gap-4">
-                <div class="w-80 h-[317px] bg-blue-200">
-                    <div>
-                        <div>
-                            <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">Meta</h3>
-                        </div>
-                        <div>
-                            <h3 class="poppins-bold ml-4 mt-4">Add New Emoji <i class="fa-solid fa-hands-praying text-yellow-300"></i></h3>
-                        </div>
-                        <div class="w-72 h-28">
-                      <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 ml-4 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                        </div>
-                        <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                      <div class="flex justify-around">
-                         <div class="ml-4">
-                            <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                            <h3 class="poppins-medium text-base">21 March 2025</h3>
-                         </div>
-                         <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="w-80 h-[317px] bg-blue-200">
-                    <div>
-                        <div>
-                            <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">GoogleLLC</h3>
-                        </div>
-                        <div>
-                            <h3 class="poppins-bold ml-4 mt-4">Integrate Open AI API</h3>
-                        </div>
-                        <div class="w-72 h-28">
-                      <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 ml-4 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                        </div>
-                        <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                      <div class="flex justify-around">
-                         <div class="ml-4">
-                            <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                            <h3 class="poppins-medium text-base">21 March 2025</h3>
-                         </div>
-                         <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                         </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="w-80 h-[317px] bg-blue-200">
-                    <div>
-                        <div>
-                            <h3 class="bg-slate-50 w-28 h-10 p-1 mt-4 ml-4 border rounded-lg">GlassDoor</h3>
-                        </div>
-                        <div>
-                            <h3 class="poppins-bold ml-4 mt-4">Improve Job Seraching</h3>
-                        </div>
-                        <div class="w-72 h-28">
-                      <h5 class="poppins-regular text-base border rounded-lg bg-slate-50 mt-6 ml-4 p-4">Debug using chrome <br>DevTools chech for overlappi...</h5>
-                        </div>
-                        <hr class="border-dotted border-t-2 border-gray-400 my-4">
-                      <div class="flex justify-around">
-                         <div class="ml-4">
-                            <h5 class="poppins-regular text-[14px]">Deadline</h5>
-                            <h3 class="poppins-medium text-base">21 March 2025</h3>
-                         </div>
-                         <div>
-                          <button class="bg-blue-600 m-auto text-base w-36 h-11 poppins-medium text-white border rounded-lg mr-4">Completed</button>
-                         </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
+          <div>
+            <button id="second-btn" class="border rounded-lg bg-blue-600 w-48 h-16 poppins-bold text-white text-lg">Back to Desk</button>
+          </div>
         </div>
+    </nav>
+
+    <div>
+        <div class="collapse bg-blue-200">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">Click me to show/hide content</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+    </div>
     
-        <!-- Right Section -->
-        <div class="w-[366px] h-[918px] bg-white">
-            <h3 class="">Activity Log</h3>
-        </div>
-    
-    </main>
-    
-    
-    
+              <div>
+                <section class="max-w-2xl mx-auto mt-10 bg-white">
+                    <h2 class="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+                
+                    <div class="border-b border-gray-300 py-4">
+                        <button class="w-full text-left font-semibold" onclick="toggleFAQ('faq1')">
+                             What are the different ways to select an element in the DOM?
+                        </button>
+                        <p id="faq1" class="hidden mt-2 text-gray-600">There are five different ways to select an element in the DOM. They are  By Class Name, by ID, by Tag name, by Query Selector and Query Selector All</p>
+                    </div>
+                
+                    <div class="border-b border-gray-300 py-4">
+                        <button class="w-full text-left font-semibold" onclick="toggleFAQ('faq2')">
+                            What is the difference between innerHTML, innerText, and textContent ?
+                        </button>
+                        <p id="faq2" class="hidden mt-2 text-gray-600">innerHTML set HTML content insise an element. innerText sets visible texts without hidden elements. On the other handcontent sets both hidden and visible text. </p>
+                    </div>
+
+                    <div class="border-b border-gray-300 py-4">
+                        <button class="w-full text-left font-semibold" onclick="toggleFAQ('faq3')">
+                            What is event delegation in the DOM?
+                        </button>
+                        <p id="faq3" class="hidden mt-2 text-gray-600">Event Delegation is a technique where a single event listener is added to a parent element to handle events for multiple child elements.</p>
+                    </div>
+
+                    <div class="border-b border-gray-300 py-4">
+                        <button class="w-full text-left font-semibold" onclick="toggleFAQ('faq4')">
+                            What is event bubbling in the DOM?
+                        </button>
+                        <p id="faq4" class="hidden mt-2 text-gray-600">Event buubling in a DOM means starting an event from the target elements and continue to the root element.</p>
+                    </div>
+
+                    <div class="border-b border-gray-300 py-4">
+                        <button class="w-full text-left font-semibold" onclick="toggleFAQ('faq5')">
+                            How do you create, add, and remove elements using JavaScript?
+                        </button>
+                        <p id="faq5" class="hidden mt-2 text-gray-600">We create an element in JS by document.createelement(), add an element by appendchild() and remove elements by remove().</p>
+                    </div>
+
+                    
+                </section>
+              </div>
+
+    <script src="script/second.js"></script>
 </body>
 </html>
