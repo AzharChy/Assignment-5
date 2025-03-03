@@ -14,38 +14,40 @@
 <body class="body min-h-screen">
     <div class="container m-auto min-h-screen">
         <!-- nav starts -->
-        <nav class="bg-white flex h-16 w-[1380px] mt-8">
-            <div class="nav-left flex gap-2 ml-6 mt-4">
-                <div class="">
-                    <img class="w-12 h-12" src="assets/logo.png" alt="">
+        <nav class="bg-white flex w-[1380px] mt-8 h-16">
+           
+                <div class="nav-left flex gap-2 ml-6 mt-4">
+                    <div class="">
+                        <img class="w-12 h-12" src="assets/logo.png" alt="">
+                    </div>
+                    <div class="w-44 h-14">
+                        <h1 class="nav-title text-3xl">Dev<span class="font-bold oppins-bold">Board</span></h1>
+                    </div>
                 </div>
-                <div class="w-44 h-14">
-                    <h1 class="nav-title text-3xl">Dev<span class="font-bold oppins-bold">Board</span></h1>
+                <div class="hidden lg:block m-auto text-blue-300 font-bold">----------------------------------------------------------------</div>
+                <div class="right flex justify-center items-center sm:gap-4 justify-between">
+                    <div class="">
+                        <i class="fa-solid fa-check text-xl text-center bg-blue-600 text-white w-8 h-8 border rounded-lg"></i> 
+                    </div>
+                    <div id="nav-num" class="font-bold text-3xl oppins-bold">23</div>
+                    <div>
+                       <button id="nav-btn" class="relative p-[2px]  w-12 h-12 rounded-full">
+                        <img class="" src="assets/theme-btn.png">
+                       </button>
                 </div>
-            </div>
-            <div class="m-auto text-blue-300 font-bold">----------------------------------------------------------------</div>
-            <div class="right flex justify-between justify-center items-center gap-4">
-                <div class="">
-                    <i class="fa-solid fa-check text-xl text-center bg-blue-600 text-white w-8 h-8 border rounded-lg"></i> 
                 </div>
-                <div id="nav-num" class="font-bold text-3xl oppins-bold">23</div>
-                <div>
-                   <button id="nav-btn" class="relative p-[2px]  w-12 h-12 rounded-full">
-                    <img class="" src="assets/theme-btn.png">
-                   </button>
-            </div>
-            </div>
+            
         </nav>
         <!-- nav ends -->
          <!-- main starts -->
-         <main class="flex justify-between gap-4 mt-8 bg-slate-50">
+         <main class="flex flex-col lg:flex-row justify-between gap-4 mt-8 bg-slate-50">
     
         
             <div class="flex flex-col gap-4 w-full mt-4 ml-2">
                 
                 
-                <div class="flex gap-4">
-                    <div class="flex justify-center items-center border rounded-md flex-1 h-32 bg-blue-200">
+                <div class="flex flex-col gap-4 md:flex-row gap-4">
+                    <div class="flex justify-center items-center border rounded-md flex-1 w-48 h-32 bg-blue-200">
                         <div>
                             <i class="fa-solid fa-check text-xl text-center bg-blue-600 text-white w-6 h-6 border rounded-lg"></i>
                         </div>
@@ -55,7 +57,7 @@
                         </div>
                     </div>
         
-                    <div id="calendar-btn" class="flex justify-center items-center border rounded-md flex-[1.5] h-32 bg-blue-700 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+                    <div id="calendar-btn" class="flex justify-center items-center border rounded-md flex-[1.5] w-80 h-32 bg-blue-700 cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                         
                         <div>
                             <img class="w-14 h-16 ml-6" src="assets/board.png" alt="">
@@ -65,7 +67,7 @@
                         </div>
                     </div>
         
-                    <div class="flex justify-center items-center border rounded-md flex-1 h-32 bg-blue-200">
+                    <div class="flex justify-center items-center border rounded-md flex-1 w-64 h-36 sm:32 bg-blue-200">
                         <div>
                             <img class="w-16 h-16 ml-4" src="assets/calender.png" alt="">
                         </div>
@@ -76,7 +78,7 @@
                 </div>
         
                 <!-- 2nd Row (Grid Layout) -->
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="w-80 h-[317px] bg-blue-100">
                         <div>
                             <div>
@@ -143,7 +145,7 @@
                       </div>
                     </div></div>
                 </div>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="w-80 h-[317px] bg-blue-100">
                         <div>
                             <div>
